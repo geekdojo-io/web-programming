@@ -27,3 +27,4 @@
     - When you visit the web application the third time, it should show `2` (1 + 1)
     - When you visit the web application the fourth time, it should show `3` (1 + 2)
     - When you visit the web application the fifth time, it should show `5` (2 + 3)
+    - When you visit the web application the sixth time, it should show `8` (3 + 5)
