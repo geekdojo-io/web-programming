@@ -16,10 +16,10 @@
 #### Week 3 - Learn Http Request and Http Response
 
 - As a Client:
-    - py_google: Build a simple client to get HTML from a web site
-    - py_slack: Build a slack client to post a message in a Slack
+    - [py_google](./tree/master/py_google): Build a simple client to get HTML from a web site
+    - [py_slack]((./tree/master/py_slack)): Build a slack client to post a message in a Slack
 - As a Server
-    - py_counter: Build a simple counter web application using `Flask` 
+    - [py_counter]((./tree/master/py_counter)): Build a simple counter web application using `Flask` 
 
 - Homework: Build a simple web application that generates the Fibonacci Sequence (`Xn = Xn-1 + Xn-2`) upon page refresh. 
     - When you visit the web application first time, it should show `1` (`Hint: initialize Xn-1 to 1 and Xn-2 to 0`)
