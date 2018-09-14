@@ -19,6 +19,7 @@
     - [py_google](py_google/): Build a simple client to get HTML from a web site
     - [py_slack](py_slack/): Build a slack client to post a message in a Slack
 - As a Server
+    - [py_hello](py_hello/): Build a simple web application that displays 'Hello World' using `Flask`
     - [py_counter](py_counter/): Build a simple counter web application using `Flask` 
 
 - Homework: Build a simple web application that generates the Fibonacci Sequence (`Xn = Xn-1 + Xn-2`) upon page refresh. 
