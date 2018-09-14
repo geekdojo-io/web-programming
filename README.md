@@ -13,7 +13,7 @@
     - What is a dynamic IP address?
     - What is port 53 used for?
 
-#### Week 3 - Learn Http Request and Http Response
+#### Week 3 - Python / Flask Programming with Http Request and Response
 
 - As a Client:
     - [py_google](py_google/): Build a simple client to get HTML from a web site
