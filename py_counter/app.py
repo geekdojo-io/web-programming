@@ -8,3 +8,6 @@ def home():
     global counter
     counter += 1
     return str(counter)
+
+if __name__ == '__main__':
+    app.run()

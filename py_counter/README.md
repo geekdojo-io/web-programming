@@ -23,7 +23,4 @@ flask run
 - Open web browser and go to `http://127.0.0.1:5000`
 - Find your IP address by typing `ifconfig | grep --inet`
 - Open a web browser from your Window (host computer).
-- Type `http://[the_ip_address_of_linux]:5000` (It doesn't work)
-- From Linux, press <kbd>Ctrl+C</kbd> to kill the Flask.
-- Type `flask run --host=0.0.0.0`
-- Open a web browser from your Window again to verify it works.
+- From Terminal, press <kbd>Ctrl+C</kbd> to kill the Flask.

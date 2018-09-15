@@ -10,7 +10,7 @@ pip install flask
 #### How to run the app
 To run, from Terminal, type:
 ```
-python hello.py
+python app.py
 ```
 Then, open a web browser, and go to `http://127.0.0.1:5000`.
 
@@ -27,3 +27,5 @@ if __name__ == '__main__':
 flask run
 ```
 Then, open a web browser, and go to `http://127.0.0.1:5000`.
+
+From Terminal, press <kbd>Ctrl+C</kbd> to kill the Flask app.
