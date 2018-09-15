@@ -22,10 +22,3 @@
     - [py_hello](py_hello/): Build a simple web application that displays 'Hello World' using `Flask`
     - [py_counter](py_counter/): Build a simple counter web application using `Flask` 
 
-- Homework: Build a simple web application that generates the Fibonacci Sequence (`Xn = Xn-1 + Xn-2`) upon page refresh. 
-    - When you visit the web application first time, it should show `1` (`Hint: initialize Xn-1 to 1 and Xn-2 to 0`)
-    - When you visit the web application the second time, it should show `1` (0 + 1)
-    - When you visit the web application the third time, it should show `2` (1 + 1)
-    - When you visit the web application the fourth time, it should show `3` (1 + 2)
-    - When you visit the web application the fifth time, it should show `5` (2 + 3)
-    - When you visit the web application the sixth time, it should show `8` (3 + 5)
