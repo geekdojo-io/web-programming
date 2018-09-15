@@ -4,7 +4,7 @@ A simple Flask app with basic routes
 #### Pre-requisite
 If Flask is not installed yet, run the following command from Terminal:
 ```
-pip install flask
+pip install flask --user
 ```
 
 #### How to run the app

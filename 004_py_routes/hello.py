@@ -10,10 +10,10 @@ def puppies():
     return 'Hello puppies'
 
 @app.route('/cats')
-def puppies():
+def cats():
     return 'Hello cats'
 
-@app.routes('/search/<keyword>')
+@app.route('/search/<keyword>')
 def search(keyword):
     return 'You searched {}'.format(keyword)
 

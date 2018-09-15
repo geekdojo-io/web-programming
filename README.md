@@ -25,20 +25,64 @@
 | `cd`     | Create a directory | `$ cd home` |
 | `touch`  | Create an empty file if it doesn't exist. | `$ touch hello.py` |
 
-###### CD (Change Directory)
+###### Examples of CD (Change Directory)
+Go to a home directory
 ```
-$ cd ~ # Go to a home directory
-$ cd SourceControl # Go to the SourceControl directory
-$ cd .. # Move up to a parent directory
-$ cd / # Go to the root directory
+$ cd ~ 
+```
+
+Go to the SourceControl directory
+```
+$ cd SourceControl 
+```
+Move up to a parent directory (..)
+```
+$ cd .. 
+```
+
+Go to the root directory (/)
+```
+$ cd / 
 ``` 
+
+
+###### Examples of Creating a new Flask project
+Open the Terminal.
+Verify that you are on the home directory.
+```
+$ pwd
+```
+Go to the SourceControl directory
+```
+$ cd SourceControl
+```
+Create a new project directory, 'my_project'
+```
+$ mkdir my_project
+```
+Go to the new directory.
+```
+$ cd my_project
+```
+Install Flask
+```
+pip install flask --user
+```
+Create 'app.py' file.
+```
+touch app.py
+```
+Launch the Visual Studio Code
+```
+code .
 
 ##### Python App Examples
 
 | Code  | Type | Examples  | 
 |---|---|---|
-|[py_google](py_google/) | Client | Build a simple client to get HTML from a web site |
-|[py_slack](py_slack/) | Client | Build a slack client to post a message in a Slack |
-| [py_hello](py_hello/) | Server | Build a simple web application that displays 'Hello World' using `Flask` |
-| [py_counter](py_counter/) | Server | Build a simple counter web application using `Flask` |
-| [py_routes](py_routes/) | Server | Build a web app with multiple routes |
+|[000_py_google](000_py_google/) | Client | Build a simple client to get HTML from a web site |
+|[001_py_slack](001_py_slack/) | Client | Build a slack client to post a message in a Slack |
+| [002_py_hello](002_py_hello/) | Server | Build a simple web application that displays 'Hello World' using `Flask` |
+| [003_py_counter](003_py_counter/) | Server | Build a simple counter web application using `Flask` |
+| [004_py_routes](004_py_routes/) | Server | Build a web app with multiple routes |
+| [005_py_requirements](005_py_requirements/) | Server | Use Requirements.txt for dependencty management |
