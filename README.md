@@ -75,6 +75,7 @@ touch app.py
 Launch the Visual Studio Code
 ```
 code .
+```
 
 ##### Python App Examples
 
