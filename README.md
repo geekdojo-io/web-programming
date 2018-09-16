@@ -100,7 +100,7 @@ $ code .
 
 Type the following lines of code in the app.py using the Visual Studio Code editor.
 ![alt text](images/py_hello.png)
-*app.py for Hello World*
+
 
 From the Terminal, run $`python app.py`.
 ```
@@ -108,6 +108,39 @@ $ python app.py
 ```
 
 Then, open a web browser from the VM, and type `http://127.0.0.1:5000` to verify that your program is working.
+
+Find the IP address for your VM using the following command:
+```
+$ ifconfig | grep inet
+```
+
+Then, from your host (Windows), open a web browser, and type the address (Example: `http://192.168.2.101:5000`), and verify that you cannot access the app. This is because the app only allows the local connection. This diagram illustrates that:
+![alt text](images/flask_access0.png)
+
+From the Terminal, press <kbd>Ctrl+C</kbb> to kill the app.
+
+
+### 'Hello World' project (Part 2)
+
+To allows the access outside your VM and debugging, change Line 9 to the following:
+```
+app.run(host="0.0.0.0", port="5000", debug=True)
+```
+So, the changed code should look like this:
+![alt text](images/py_hello2.png)
+
+
+From the Terminal, run $`python app.py`.
+```
+$ python app.py
+```
+
+Then, open a web browser from the VM, and type `http://127.0.0.1:5000` to verify that your program is working.
+
+From your host (Windows), open a web browser, and type the address (Example: `http://192.168.2.101:5000`), and verify that you can access the app. This diagram illustrates that:
+![alt text](images/flask_access1.png)
+
+From the Terminal, press <kbd>Ctrl+C</kbb> to kill the app.
 
 ---
 
