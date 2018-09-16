@@ -1,10 +1,26 @@
-### Web Programming Class
+# Web Programming Course
 
-#### Week 1 - Introduction to Network & History of Internet
+## Curriculum
+At high-level, this course follows the following curriculum: 
+1. Learn how computer network, Internet and World Wide Web work.
+2. Learn Linux and use it in VirtualBox
+3. Learn the Python Flask programming
+4. Learn Git and GitHub
+5. Use Google App Engine (GAE) to deploy your code to Internet
+6. Learn Node.js / Express
+
+![alt text](images/curriculum.png)
+*High-level overview of this course*
+
+---
+
+## Week 1 - Introduction to Network & History of Internet
 
 - Homework: Write a research paper about what happens when you type an URL (example: www.google.com) in a web browser and press enter.
 
-#### Week 2 - Introduction to Network & History of Internet (Cont.)
+---
+
+### Week 2 - Introduction to Network & History of Internet (Cont.)
 
 - Homework: Write a research paper on an IP address. Topics should cover:
     - What is IP address (IPv4)?
@@ -13,7 +29,7 @@
     - What is a dynamic IP address?
     - What is port 53 used for?
 
-#### Week 3 & Week 4 - Python / Flask Programming with Http Request and Response
+### Week 3 & Week 4 - Python / Flask Programming with Http Request and Response
 
 ##### Linux commands
 ###### Brief list of linux commands
@@ -46,38 +62,51 @@ $ cd /
 ``` 
 
 
-###### Examples of Creating a new Flask project
+###### Examples of Creating the 'Hello World' project
 Open the Terminal.
 Verify that you are on the home directory.
 ```
 $ pwd
 ```
-Go to the SourceControl directory
+Go to the SourceControl directory.
 ```
 $ cd SourceControl
 ```
-Create a new project directory, 'my_project'
+Create a new project directory, 'py_hello'.
 ```
-$ mkdir my_project
+$ mkdir py_hello
 ```
-Go to the new directory.
+Go to the py_hello directory.
 ```
-$ cd my_project
+$ cd py_hello
 ```
-Install Flask
+Install Flask.
 ```
-pip install flask --user
+$ pip install flask --user
 ```
 Create 'app.py' file.
 ```
-touch app.py
+$ touch app.py.
 ```
-Launch the Visual Studio Code
+Launch the Visual Studio Code.
 ```
-code .
+$ code .
 ```
 
-##### Python App Examples
+Type the following lines of code in the app.py using the Visual Studio Code editor.
+![alt text](images/py_hello.png)
+*app.py for Hello World*
+
+From the Terminal, run $`python app.py`.
+```
+$ python app.py
+```
+
+Then, open a web browser from the VM, and type `http://127.0.0.1:5000` to verify that your program is working.
+
+---
+
+## Python App Examples
 
 | Code  | Type | Examples  | 
 |---|---|---|
