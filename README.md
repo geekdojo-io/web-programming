@@ -71,6 +71,7 @@ $ cd /
 Flask is a simple yet powerful Python web server.
 ![alt text](images/ws_flask.png)
 
+
 ### 'Hello World' project
 Open the Terminal.
 Verify that you are on the home directory.
@@ -123,18 +124,25 @@ Then, from your host (Windows), open a web browser, and type the address (Exampl
 
 From the Terminal, press <kbd>Ctrl+C</kbd> to kill the app.
 
+#### Quiz
+
+- Create `flask_quiz1` directory under the `SourceControl` directory, and create a Flask app that returns your name. Verify that it works.
+
 ### 'Hello World' project (Part 2)
 
 To allows the access outside your VM and debugging, change Line 9 to the following:
-```
+
+```python
 app.run(host="0.0.0.0", port="5000", debug=True)
 ```
+
 So, the changed code should look like this:
 ![alt text](images/py_hello2.png)
 
 
 From the Terminal, run $`python app.py`.
-```
+
+```shell
 $ python app.py
 ```
 
@@ -145,12 +153,32 @@ From your host (Windows), open a web browser, and type the address (Example: `ht
 
 From the Terminal, press <kbd>Ctrl+C</kbd> to kill the app.
 
+
+#### Quiz
+
+- Create `flask_quiz2` directory under the `SourceControl` directory, and create a Flask app that returns your name. Access the website from your Windows machine. Verify that it works.
+
+---
+
+
 ### Routing
 Use `@app.route()` to bind a function to a specific URL path.
 
 #### Basic routing
 
+![alt text](images/py_basic_routing.png)
+
+
+#### Quiz
+
+- Create `flask_quiz3` directory under the `SourceControl` directory, and copy the code inside app.py from [003_py_counter](003_py_counter/) example. Add `/reset` path which binds to a `reset()` method which resets the counter to `0`.
+
 #### Dynamic routing
+You can make the URL path dynamic by accepting a `<name>`, and pass the `name` variable as an input parameter to the method bound to the route. Here is an example:
+![alt text](images/py_dynamic_routing.png)
+
+#### Quiz
+- Enhance the `flask_quiz3` by creating a path `/set/<new_counter>` which binds to a `set(new_counter)` method which sets the counter to the `new_counter` variable if the `new_counter` is an unsigned integer (non-negative integer).
 
 ---
 
