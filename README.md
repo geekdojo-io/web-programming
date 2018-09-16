@@ -67,6 +67,10 @@ $ cd /
 
 ---
 
+### Flask Web Server
+Flask is a simple yet powerful Python web server.
+![alt text](images/ws_flask.png)
+
 ### 'Hello World' project
 Open the Terminal.
 Verify that you are on the home directory.
@@ -117,8 +121,7 @@ $ ifconfig | grep inet
 Then, from your host (Windows), open a web browser, and type the address (Example: `http://192.168.2.101:5000`), and verify that you cannot access the app. This is because the app only allows the local connection. This diagram illustrates that:
 ![alt text](images/flask_access0.png)
 
-From the Terminal, press <kbd>Ctrl+C</kbb> to kill the app.
-
+From the Terminal, press <kbd>Ctrl+C</kbd> to kill the app.
 
 ### 'Hello World' project (Part 2)
 
@@ -140,7 +143,14 @@ Then, open a web browser from the VM, and type `http://127.0.0.1:5000` to verify
 From your host (Windows), open a web browser, and type the address (Example: `http://192.168.2.101:5000`), and verify that you can access the app. This diagram illustrates that:
 ![alt text](images/flask_access1.png)
 
-From the Terminal, press <kbd>Ctrl+C</kbb> to kill the app.
+From the Terminal, press <kbd>Ctrl+C</kbd> to kill the app.
+
+### Routing
+Use `@app.route()` to bind a function to a specific URL path.
+
+#### Basic routing
+
+#### Dynamic routing
 
 ---
 

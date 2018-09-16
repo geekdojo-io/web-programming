@@ -2,8 +2,16 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route('/')
-def home():
-    return 'Hello World'
+def index():
+    return 'Home'
+
+@app.route('/hello')
+def hello_index():
+    return 'Hello, World'
+
+@app.route('/bye')
+def bye():
+    return 'Bye bye!'
 
 @app.route('/puppies')
 def puppies():
@@ -12,6 +20,10 @@ def puppies():
 @app.route('/cats')
 def cats():
     return 'Hello cats'
+
+@app.route('/hello/<name>')
+def hello(name):
+    return 'Hello, my name is {}'.format(name)
 
 @app.route('/search/<keyword>')
 def search(keyword):

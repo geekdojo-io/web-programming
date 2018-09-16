@@ -10,6 +10,6 @@ pip install flask --user
 #### How to run the app
 To run, from Terminal, type:
 ```
-python hello.py
+python app.py
 ```
 Then, open a web browser, and go to `http://127.0.0.1:5000`.
