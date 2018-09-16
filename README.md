@@ -65,6 +65,25 @@ Go to the root directory (/)
 $ cd / 
 ``` 
 
+
+#### Quiz
+
+- Open Terminal. Create `linux_quiz` directory under the `SourceControl` directory, and create a sub directory `subdir1`, `subdir2` and `subdir3` under `linux_quiz` directory. Create `hello.txt` under `subdir2` directory. Create `README.md` under `subdir3` directory. Once all directories and files are created, type `ls -R` and press <kbd>enter</kbd> to verify the result. Here is an example of the expected behavior:
+```console
+$ ls -R
+.:
+subdir1  subdir2  subdir3
+
+./subdir1:
+
+./subdir2:
+hello.txt
+
+./subdir3:
+README.md
+
+```
+
 ---
 
 ### Flask Web Server
@@ -75,31 +94,43 @@ Flask is a simple yet powerful Python web server.
 ### 'Hello World' project
 Open the Terminal.
 Verify that you are on the home directory.
-```
+
+```console
 $ pwd
 ```
+
 Go to the SourceControl directory.
-```
+
+```console
 $ cd SourceControl
 ```
 Create a new project directory, 'py_hello'.
-```
+
+```console
 $ mkdir py_hello
 ```
+
 Go to the py_hello directory.
-```
+
+```console
 $ cd py_hello
 ```
+
 Install Flask.
-```
+
+```console
 $ pip install flask --user
 ```
+
 Create 'app.py' file.
-```
+
+```console
 $ touch app.py.
 ```
+
 Launch the Visual Studio Code.
-```
+
+```console
 $ code .
 ```
 
@@ -108,14 +139,16 @@ Type the following lines of code in the app.py using the Visual Studio Code edit
 
 
 From the Terminal, run $`python app.py`.
-```
+
+```console
 $ python app.py
 ```
 
 Then, open a web browser from the VM, and type `http://127.0.0.1:5000` to verify that your program is working.
 
 Find the IP address for your VM using the following command:
-```
+
+```console
 $ ifconfig | grep inet
 ```
 
@@ -142,7 +175,7 @@ So, the changed code should look like this:
 
 From the Terminal, run $`python app.py`.
 
-```shell
+```console
 $ python app.py
 ```
 
