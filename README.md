@@ -20,7 +20,7 @@ At high-level, this course follows the following curriculum:
 
 ---
 
-### Week 2 - Introduction to Network & History of Internet (Cont.)
+## Week 2 - Introduction to Network & History of Internet (Cont.)
 
 - Homework: Write a research paper on an IP address. Topics should cover:
     - What is IP address (IPv4)?
@@ -29,10 +29,12 @@ At high-level, this course follows the following curriculum:
     - What is a dynamic IP address?
     - What is port 53 used for?
 
-### Week 3 & Week 4 - Python / Flask Programming with Http Request and Response
+---
 
-##### Linux commands
-###### Brief list of linux commands
+## Week 3 & Week 4 - Python / Flask Programming with Http Request and Response
+
+### Linux commands
+#### Brief list of linux commands
 | Command  | Description  | Example |
 |---|---|---|
 | `mkdir`  | Make directory   | `$ mkdir py_hello` |
@@ -41,7 +43,9 @@ At high-level, this course follows the following curriculum:
 | `cd`     | Create a directory | `$ cd home` |
 | `touch`  | Create an empty file if it doesn't exist. | `$ touch hello.py` |
 
-###### Examples of CD (Change Directory)
+---
+
+### Examples of CD (Change Directory)
 Go to a home directory
 ```
 $ cd ~ 
@@ -61,8 +65,9 @@ Go to the root directory (/)
 $ cd / 
 ``` 
 
+---
 
-###### Examples of Creating the 'Hello World' project
+### 'Hello World' project
 Open the Terminal.
 Verify that you are on the home directory.
 ```
