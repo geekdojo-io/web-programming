@@ -1,0 +1,16 @@
+<html>
+<head>
+    <title>{{title}}</title>
+</head>
+<body>
+    <h3><a href="{{ url_for('home') }}">Home</a></h3>
+    <h3>{{title}}</h3>
+    We have lots of puppies...
+    <ul>
+        {% for puppy in puppies %}
+        <li>{{ puppy }}</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
