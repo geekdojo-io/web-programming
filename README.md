@@ -451,3 +451,4 @@ So, the final code for the puppies should look like below:
 | [003_py_counter](003_py_counter/) | Server | Build a simple counter web application using `Flask` |
 | [004_py_routes](004_py_routes/) | Server | Build a web app with multiple routes |
 | [005_py_requirements](005_py_requirements/) | Server | Use Requirements.txt for dependencty management |
+| [006_py_templates](006_py_templates/) | Server | Build a pet-rescue web site using Flask and Jinja2 templates |
