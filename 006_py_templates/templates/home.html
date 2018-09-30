@@ -5,9 +5,11 @@
 <body>
     <H3>{{title}}</H3>
     <div>
-        <h2>
-            <a href="{{url_for('puppies')}}">Puppies</a>
-        </h2>
+            <h2>
+                    {% for pet in pets %}
+                        <a href="{{url_for(pet["url"])}}">pet["title"]</a>
+                    {% endfor %}
+            </h2>
     </div>
 </body>
 </html>

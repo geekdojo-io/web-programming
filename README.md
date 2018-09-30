@@ -213,7 +213,233 @@ You can make the URL path dynamic by accepting a `<name>`, and pass the `name` v
 #### Quiz
 - Enhance the `flask_quiz3` by creating a path `/set/<new_counter>` which binds to a `set(new_counter)` method which sets the counter to the `new_counter` variable if the `new_counter` is an unsigned integer (non-negative integer).
 
+### Templates
+Key points of templates
+
+- Create a html file inside the `templates` folder.
+- Use `{{ variables }}` syntax inside an html file.
+- Use `{% %}` syntax inside an html file for conditional and loop statements.
+- Use `url_for(endpoint)` method to link to each endpoint.
+
 ---
+
+#### Pet-Rescue Project (Part 1)
+
+Open the Terminal.
+Verify that you are on the home directory.
+
+```console
+$ pwd
+```
+
+Go to the SourceControl directory.
+
+```console
+$ cd SourceControl
+```
+Create a new project directory, 'py_hello'.
+
+```console
+$ mkdir py_templates
+```
+
+Go to the py_templates directory.
+
+```console
+$ cd py_templates
+```
+
+Install Flask.
+
+```console
+$ pip install flask --user
+```
+
+Create 'app.py' file.
+
+```console
+$ touch app.py
+```
+
+
+Create 'templates' folder.
+
+```console
+$ touch templates
+```
+
+Launch the Visual Studio Code.
+
+```console
+$ code .
+```
+Create `home.html` file inside the `templates folder, and type the following lines of code using the Visual Studio Code editor.
+
+```html
+<html>
+<head>
+    <title>{{title}}</title>
+</head>
+<body>
+    <H3>{{title}}</H3>
+</body>
+</html>
+```
+
+
+Type the following lines of code in the app.py using the Visual Studio Code editor.
+
+```python
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():    
+    return render_template('home.html', title='Welcome to Pet Rescue')
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+```
+
+
+From the Terminal, run $`python app.py`.
+
+```console
+$ python app.py
+```
+
+#### Pet-Rescue Project (Part 2)
+
+Let's continue the part 2 by creating a page for puppies.
+
+Create `puppies.html` file inside the `templates folder, and type the following lines of code using the Visual Studio Code editor.
+
+```html
+<html>
+<head>
+    <title>{{title}}</title>
+</head>
+<body>
+    <h3>{{title}}</h3>
+    <div>{{subtitle}</div>
+    <ul>
+        {% for puppy in puppies %}
+        <li>{{ puppy }}</li>
+        {% endfor %}
+    </ul>    
+</body>
+
+</html>
+```
+
+Type the following lines of code above the `if __name__ == '__main__':` line in the app.py using the Visual Studio Code editor.
+
+```python
+
+@app.route('/puppies')
+def puppies():
+    puppies = ['Rufus', 'Corgies', 'Golden Retrievers', 'Beagle', 'Poodle', 'Pug']
+    return render_template('puppies.html', 
+    title='Puppies', 
+    subtitle='Bring these puppies to your home!'
+    puppies=puppies)
+
+```
+
+So, the complete code for the app.py should look like this:
+
+```python
+
+from flask import Flask, render_template
+
+app = Flask(__name__)
+
+@app.route('/')
+def home():    
+    return render_template('home.html', title='Welcome to Pet Rescue')
+
+@app.route('/puppies')
+def puppies():
+    puppies = ['Rufus', 'Corgies', 'Golden Retrievers', 'Beagle', 'Poodle', 'Pug']
+    return render_template('puppies.html', 
+    title='Puppies', 
+    subtitle='Bring these puppies to your home!'
+    puppies=puppies)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+```
+
+From the Terminal, run $`python app.py`.
+
+```console
+$ python app.py
+```
+
+#### Practice
+1. Create a route for cats by creating the `kittens.html` and provide the title, subtitle variables as well as the kittens list from the app.py. Display the title, subtitle and the kittens list inside the kittens.html.
+
+2. Create a route for birds by creating the `birds.html` and provide the title, subtitle variables as well as the birds list from the app.py. Display the title, subtitle and the birds list inside the birds.html.
+
+
+
+#### Pet-Rescue Project (Part 3)
+Let's add links from the home page to the puppies, kittens and birds page using `url_for(endpoint)` method. Verify that the urls are working by running `python app.py` from the Terminal.
+
+```html
+<html>
+<head>
+    <title>{{title}}</title>
+</head>
+<body>
+    <H3>{{title}}</H3>
+    <div>
+        <h2>
+            {% for pet in pets %}
+                <a href="{{url_for(pet["url"])}}">pet["title"]</a>
+            {% endfor %}
+        </h2>
+    </div>
+</body>
+</html>
+
+```
+
+Let's add the "Home" link on the puppies page by adding the following line right below the `<body>` tag so that users can go back to the home page.
+
+```html
+<h3><a href="{{ url_for('home') }}">Home</a></h3>
+```
+
+So, the final code for the puppies should look like below:
+
+```html
+<html>
+<head>
+    <title>{{title}}</title>
+</head>
+<body>
+    <h3><a href="{{ url_for('home') }}">Home</a></h3>
+    <h3>{{title}}</h3>
+    We have lots of puppies...
+    <ul>
+        {% for puppy in puppies %}
+        <li>{{ puppy }}</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>
+
+```
+
+#### Practice
+1. Add the "home" link on the cats page just like the above example on Part 3.
+2. Add the "home" link on the birds page just like the above example on Part 3.
+
 
 ## Python App Examples
 
