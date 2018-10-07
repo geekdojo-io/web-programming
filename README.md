@@ -454,7 +454,9 @@ GitHub is a widely popular free service (paid service also available) for Git.
 2. Click _New Repository_ button or go to https://github.com/new. 
     
     2.1 Type the name of repository, i.e. _HackerRank_
+    
     2.2 For _Add .gitignore_, choose Python.
+    
     2.3 Click _Create Repository_
 
 ### Step 3: Clone the Git Repository
