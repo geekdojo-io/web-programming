@@ -441,6 +441,63 @@ So, the final code for the puppies should look like below:
 2. Add the "home" link on the birds page just like the above example on Part 3.
 
 
+## GIT & GitHub
+Git is a source code management system that keeps track of changes of any set of files.
+
+GitHub is a widely popular free service (paid service also available) for Git.
+
+### Step 1: Creating a GitHub account
+- Go to https://github.com/, click _Sign up_ and complete the registration process.
+
+### Step 2: Creating a new Repository
+1. Go to https://github.com, and sign in if you are not already signed in.
+2. Click _New Repository_ button or go to https://github.com/new. 
+    
+    2.1 Type the name of repository, i.e. _HackerRank_
+    2.2 For _Add .gitignore_, choose Python.
+    2.3 Click _Create Repository_
+
+### Step 3: Clone the Git Repository
+1. Go to the newly created repository in Step 2
+2. Click _Clone or download_ button, and copy the address of the Git.
+3. From your Linux VM, open Terminal.
+4. Type the following command.
+```console
+$ git clone <git_repository_url>
+```
+
+### Step 4: Add a New File
+
+1. Create a new file, README.md from Terminal.
+```console
+$ touch README.md
+```
+2. Open Visual Studio Code
+```console
+$ code .
+```
+3. Add contents to README.md.
+4. From Terminal, add the change to Git.
+```console
+$ git add .
+```
+5. Then, commit the change to Git.
+```console
+$ git commit -m "Add README.md"
+```
+6. Then, push the change to GitHub.
+```console
+$ git push
+```
+At this point, the change you made has been pushed to GitHub. Let's open a web browser, go to https://www.github.com, navigate to your Git repository to verify that your change is in the Git repository.
+
+From now, I will call Git repo instead of Git repository.
+
+#### Practice
+1. Open Terminal. Create `hello_world.py`, and write a code that prints "Hello, World!". Publish(Push) the `hello_world.py` to your Git repo.
+2. Instead of solving a HackerRank problem (I'll provide you the question) from a web browser, create `hackerrank_problem.py`, and solve the problem using Visual Studio Code. Verify that the code is working. Copy and paste the code to HackerRank to verify that your solution is working. Then, push the change to your Git Repo.
+
+
 ## Python App Examples
 
 | Code  | Type | Examples  | 
