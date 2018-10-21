@@ -23,7 +23,7 @@ x = 3 * (4 * 3 + 1), y is unchanged.
 
 ---
 
-Q2 - What is the output for `Theano[-3]`?
+Q2 - What is the output for `'Theano'[-3]`?
 
     A - 'e'
     B - 'a'
