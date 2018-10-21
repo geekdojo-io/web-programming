@@ -68,6 +68,7 @@ The `split()` method splits a string into a list. You can specify the separator,
 </p>
 </details>
 
+---
 
 Q4 - What is output of following code?
 
@@ -97,6 +98,8 @@ The code is using recursion. Recursion is a a method that calls itself.
 </p>
 </details>
 
+---
+
 Q5 - What is output of following code?
 
 ```python
@@ -117,3 +120,5 @@ arr.insert(2, 15)
 
 </p>
 </details>
+
+---
