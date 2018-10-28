@@ -265,7 +265,7 @@ $ touch app.py
 Create 'templates' folder.
 
 ```console
-$ touch templates
+$ mkdir templates
 ```
 
 Launch the Visual Studio Code.
