@@ -1,0 +1,19 @@
+<html>
+<head>
+    <title>{{title}}</title>
+</head>
+<body>
+    <h3><a href="{{ url_for('home') }}">Home</a></h3>
+    <h3>{{title}}</h3>
+    {{subtitle}}
+    <div>
+        <img src={{ url_for('static', filename=image) }} width=400>
+    </div>
+    <ul>
+        {% for pet in pets %}
+        <li>{{ pet }}</li>
+        {% endfor %}
+    </ul>
+</body>
+
+</html>

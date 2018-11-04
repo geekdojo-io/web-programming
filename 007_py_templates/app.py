@@ -14,31 +14,30 @@ def home():
 
 @app.route('/kittens')
 def kittens():
-    kittens = ['Adele', 'Bella', 'Boo']
-    return render_template('kittens.html', 
+    pets = ['Adele', 'Bella', 'Boo']
+    return render_template('pets.html', 
     title='Kittens', 
+    image='images/kitten.jpg',
     subtitle='Bring these kittens to your home!',
-    kittens=kittens)    
+    pets=pets)    
 
 @app.route('/birds')
 def birds():
-    birds = ['Charlie', 'Angel', 'Max']
-    return render_template('birds.html', 
+    pets = ['Charlie', 'Angel', 'Max']
+    return render_template('pets.html', 
     title='birds', 
+    image='images/bird.jpg',
     subtitle='Bring these birds to your home!',
-    birds=birds)      
+    pets=pets)      
 
 @app.route('/puppies')
 def puppies():
-    puppies = ['Rufus', 'Corgies', 'Golden Retrievers', 'Beagle', 'Poodle', 'Pug']
-    return render_template('puppies.html', 
+    pets = ['Rufus', 'Corgies', 'Golden Retrievers', 'Beagle', 'Poodle', 'Pug']
+    return render_template('pets.html', 
     title='Puppies', 
+    image='images/puppy.jpg',
     subtitle='Bring these puppies to your home!',
-    puppies=puppies)
-
-#TODO: Create a route for cats
-
-#TODO: Create a route for birds
+    pets=pets)
 
 if __name__ == '__main__':
     app.run(debug=True)
