@@ -561,3 +561,55 @@ From now, I will call Git repo instead of Git repository.
 | [004_py_routes](004_py_routes/) | Server | Build a web app with multiple routes |
 | [005_py_requirements](005_py_requirements/) | Server | Use Requirements.txt for dependencty management |
 | [006_py_templates](006_py_templates/) | Server | Build a pet-rescue web site using Flask and Jinja2 templates |
+
+## Generating the SSH key
+It can be cumberstome to type your userID and password for GitHub all the time. Using SSH keys illiminates this hassel plus enhanced security.
+
+1. Go to https://github.com/settings/keys
+2. Type the following command to verify if the SSH keys are present:
+
+```
+$ ls -al ~/.ssh
+```
+
+3. Paste the text below, substituting in your GitHub email address.
+
+```console
+$ ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+
+```
+Press Enter to accept the default location.
+
+Type Enter if you want to accept a blank passphrase.
+
+4. Add your SSH private key to the ssh-agent.
+
+```console
+ssh-add ~/.ssh/id_rsa
+```
+
+5. Add the SSH key to your clipboard.
+
+```console
+$ clip < ~/.ssh/id_rsa.pub
+```
+If clip is not installed, let's install it.
+
+```console
+$ sudo apt install geomview
+```
+
+Then, run the clip command again.
+
+```console
+$ clip < ~/.ssh/id_rsa.pub
+```
+
+If the clip command does not work, just print out the text, and copy the text by your self.
+
+
+```console
+$ cat ~/.ssh/id_rsa.pub
+```
+
+Copy the text, and go to https://github.com/settings/keys, and click "New SSH key", and generate the key.
