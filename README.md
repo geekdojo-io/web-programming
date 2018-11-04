@@ -588,7 +588,7 @@ Type Enter if you want to accept a blank passphrase.
 ssh-add ~/.ssh/id_rsa
 ```
 
-5. Add the SSH key to your clipboard.
+5. Add the SSH key to your clipboard. 
 
 ```console
 $ clip < ~/.ssh/id_rsa.pub
