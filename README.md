@@ -440,6 +440,56 @@ So, the final code for the puppies should look like below:
 1. Add the "home" link on the cats page just like the above example on Part 3.
 2. Add the "home" link on the birds page just like the above example on Part 3.
 
+#### Pet-Rescue Project (Part 4)
+The web site looks boring without images. I created a boilerplate project with pre-downloaded images so that you don't need to download images by yourself.
+
+1. From your web browser, go to https://github.com/geekdojo-io/web-programming, and click "Clone or download" link. Click the Paste icon to copy the address of the repository.
+
+2. Run the following command from the `SourceControl` directory in your linux VM.
+
+```console
+$ git clone https://github.com/geekdojo-io/web-programming.git
+```
+
+3. Go to `web-programming\007_py_templates\before` folder.
+
+```console
+cd web-programming\007_py_templates\before
+```
+
+4. Open the Visual Studio Code.
+
+```console
+code .
+```
+
+5. Examine the folder structure.
+
+```
+./static
+    ./images
+        *.jpg
+./templates
+    *.html
+app.py
+```
+
+6. Let's add an image for a puppy in the home page
+
+```html
+
+<img src='{{url_for('static', filename='images/puppy.jpg')}}'>
+<a href="{{url_for('puppies')}}">Puppies</a><br />
+```
+
+Practice:
+Do the same for the kittens (kitten.jpg) and birds (bird.jpg).
+
+7. Imagine that the business for the pet rescue flourishes, and we need to add 2 more categories, "reptiles" and "hamsters". With the current approach, we need to manually update the contents and also need to create two more html files for the "reptiles" and "hamsters".
+
+Instead of doing so manually, let's use `for loops` for the home.html. Also, let's create a template file called `pets.html`, and delete birds.html, kittens.html and puppies.html. The new `pets.html` will handle any type of pets from now.
+
+
 
 ## GIT & GitHub
 Git is a source code management system that keeps track of changes of any set of files.
