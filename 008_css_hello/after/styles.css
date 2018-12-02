@@ -1,0 +1,10 @@
+body { }
+h1 {color: #555555;}
+.robot {
+    color: #555555; 
+    border: 1px solid #eeeeee;
+    box-shadow: 0 2px 2px #cccccc;
+    padding: 20px;
+}
+
+img { float: left; margin: 0px 15px 15px 0px; }
