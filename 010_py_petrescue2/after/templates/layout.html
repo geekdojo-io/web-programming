@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>
+    Pet-Rescue
+    </title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+<header>
+<h1><img src="{{ url_for('static', filename='images/paw-icon.png') }}" width="40px" height="40px" align="left">Pet-Rescue</h1>
+
+<nav>
+    <ul id="main-nav" class="nav">                    
+    <li><a href="{{ url_for('home') }}">Home</a></li>
+    <li><a href="{{ url_for('help') }}">Ways to Help</a></li>
+    <li><a href="{{ url_for('dogs') }}">Available Dogs</a></li>
+    <li><a href="{{ url_for('adopted') }}">Adopted Dogs</a></li>
+    <li><a href="{{ url_for('application') }}">Adoption Application</a></li>
+    <li><a href="{{ url_for('specials') }}" class="featured">Specials</a></li>
+    </ul>
+</nav>
+</header>
+<main>    
+    <section class="container">
+        {% block content %}
+        {% endblock %}
+    </section>
+</main>
+<footer class="footer">
+    &copy; 2019 Pet-Rescue &mdash;
+    <a href="{{ url_for('terms') }}">Terms of use</a>
+</footer>
+</body>
+</html>
